@@ -1,0 +1,84 @@
+@import url("https://fonts.cdnfonts.com/css/seven-segment");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.calculator {
+  width: 25%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr;
+  grid-template-areas:
+    "visor"
+    "container";
+  gap: 2rem;
+  margin: 5rem auto;
+  border: 0.5rem solid black;
+  border-radius: 1rem;
+  background-color: #61684d;
+}
+.display {
+  grid-area: visor;
+  text-align: end;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  background-color: #cccdbb;
+}
+.container {
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "container0"
+    "container1"
+    "container2"
+    "container3"
+    "container4";
+  justify-items: center;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  background-color: #beb59e;
+}
+.container0 {
+  width: 85%;
+  grid-area: container0;
+  justify-content: start;
+}
+.container1 {
+  grid-area: container1;
+}
+.container2 {
+  grid-area: container2;
+}
+.container3 {
+  grid-area: container3;
+}
+.container4 {
+  grid-area: container4;
+}
+button {
+  width: 6rem;
+  height: 6rem;
+  margin: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: #9c7159;
+  border: none;
+  color: beige;
+}
+span {
+  font-family: "Seven Segment", sans-serif;
+  font-size: 6rem;
+  padding: 1rem;
+}
+#btn-clear,
+#equal {
+  background-color: #caa55b;
+}
