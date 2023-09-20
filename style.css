@@ -8,7 +8,7 @@ html {
   font-size: 62.5%;
 }
 .calculator {
-  width: 25%;
+  width: 20%;
   min-width: 40rem;
   padding: 1rem;
   display: grid;
@@ -31,6 +31,7 @@ html {
   background-color: #cccdbb;
 }
 .container {
+  width: 100%;
   grid-area: container;
   display: grid;
   grid-template-columns: 1fr;
@@ -47,20 +48,40 @@ html {
   background-color: #beb59e;
 }
 .container0 {
-  width: 82%;
+  width: 90%;
+  background-color: #beb59e;
   grid-area: container0;
-  justify-content: start;
 }
 .container1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  width: 90%;
   grid-area: container1;
 }
 .container2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  width: 90%;
   grid-area: container2;
 }
 .container3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  width: 90%;
   grid-area: container3;
 }
 .container4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  width: 90%;
   grid-area: container4;
 }
 button {
