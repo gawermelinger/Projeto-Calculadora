@@ -9,6 +9,7 @@ html {
 }
 .calculator {
   width: 25%;
+  min-width: 40rem;
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -46,7 +47,7 @@ html {
   background-color: #beb59e;
 }
 .container0 {
-  width: 85%;
+  width: 82%;
   grid-area: container0;
   justify-content: start;
 }

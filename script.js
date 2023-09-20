@@ -63,7 +63,8 @@ keyEqual.addEventListener("click", () => {
   operation = checkLastDigit(operation, operators);
   operation = operation.replace("x", "*").replace("÷", "/");
   result = eval(operation);
-  display.innerText = result.toFixed(8).toString().substring(0, 10);
+  display.innerText =
+    Math.round((result + Number.EPSILON) * 10000000) / 10000000;
   flagFinish = 1;
 });
 
